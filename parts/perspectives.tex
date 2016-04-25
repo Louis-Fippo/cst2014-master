@@ -1,0 +1,32 @@
+\chapter{Perspectives}
+
+A court terme, nous allons proposer des simulations du modèle complet. Pour ce faire nous devons mettre ensemble les sous-graphes pour reconstituer le modèle
+complet. Cette reconstitution exige la msie en oeuvre du mécanisme de synchronisation entre les composants qui ont une influence indépendante sur un autre 
+composant. En effet, nous avons observé que des composants qui agissent de façon indépendante sur un autre composant peuvent générer des oscillations. Ce comportement
+n'est pas cohérent avec la dynamique que voulons générer. Pour cette réaison nous avons décidé de mettre en oeuvre le mécanisme de synchronisation dans le formalisme 
+des frappes de processus. En plus de cette perspective immédiate, nous allons présenter dans la suite les autres perspectives de ce travail.
+
+\section{Notion de reconnaissance automatique  de trace}\label{sec:trace}
+On peut comparer deux systèmes de transitions pour voir leur évolution au fur et à mesure que les transistions sont tirées. L'évolution d'un système peut être 
+représentée par la trace du chemin issu de l'état initial ou un autre. On peut alors analyser les traces et voir comment un système se comporte par rapport à un autre.
+En particulier, on peut chercher à savoir si des traces sont identiques, si l'une est incluse dans l'autre, si les deux traces ont les sous-traces communes spécifiques.
+Nous comptons sur la base de cette idée mettre en oeuvre un mécansme de reconnaissance automatique des traces qui seront générées après simulation du modèle. L'objectif est
+de pouvoir comparer de façon automatique un résultat d'une simulation avec une courbe discrete sur la base des critères objectifs.
+
+
+\section{Etude stochastique}\label{sec:verification}
+
+Le modèle que nous avons construis est un modèle qui prend en compte l'aspect stochastique des systèmes biologiques. Nous nous proposons d'effectuer une étude stochastique de 
+ce modèle afin de pouvoir mettre en évidence un ensemble de propriétés liées à l'aspect stochastique du focntionnement du modèle. Un des objectifs majeur de cette perspective est 
+de pouvoir faire des prédictions stochastiques des dynamiques que nous pourrions observer en fonction du nombre de simulation et des paramètres stochastiques du modèle. Nous 
+espérons aussi pouvoir mettre en évidence un ensemble de caractéristiques stochastiques qui vont nous permettre d'influencer la dynamique du modèle.
+
+\section{Vérification logique et Processus Clés} \label{sec:keyplayer}
+Outre l'étude stochastique du modèle, nous allons nous intéresser à une vérification logique des propriétés du modèle afin de proposer les éléments pour le contrôle de 
+la dynamique du réseau. Nous comptons nous intéresser à la détection des processus clés. Ici un processus clé est un processus tel que son activité(actif ou inactif) modifie la dynamique du réseau ou 
+d'une sous partie du réseau.
+
+\section{Mise en oeuvre sur un cas réel biologique}\label{sec:miseenoeuvre}
+Les résultats concernants l'analyse dynamique du système et les processus clés seront validés expérimentalement par des analyses fonctionnelles
+des gènes clés du système de différentiation cellulaire via l'interférence basée sur shRNA dans les kératinocytes humains primaires.
+

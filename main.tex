@@ -1,0 +1,106 @@
+\documentclass[11pt]{report}
+
+\usepackage{hyperref}
+
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{amsmath}  % Maths
+\usepackage{amsfonts} % Maths
+\usepackage{amssymb}  % Maths
+\usepackage{stmaryrd} % Maths (crochets doubles)
+
+\usepackage{url}     % Mise en forme + liens pour URLs
+\usepackage{array}   % Tableaux évolués
+
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{comment}
+
+\usepackage[hmargin=3cm,vmargin=2.5cm]{geometry}
+
+\usepackage{tikz}
+\newdimen\pgfex
+\newdimen\pgfem
+\usetikzlibrary{arrows,shapes,shadows,scopes}
+\usetikzlibrary{positioning}
+\usetikzlibrary{matrix}
+\usetikzlibrary{decorations.text}
+\usetikzlibrary{decorations.pathmorphing}
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%Definition des éléments pour un reseau de signalisation%%%%%%%%%%%%%%%%%
+\definecolor{pinegreen}{cmyk}{0.92,0,0.59,0.25}
+\definecolor{royalblue}{cmyk}{1,0.50,0,0}
+\definecolor{lavander}{cmyk}{0,0.48,0,0}
+\definecolor{violet}{cmyk}{0.79,0.88,0,0}
+\tikzstyle{sn}=[circle, draw, thin,fill=cyan!20, scale=0.8] %seed node
+\tikzstyle{ps}=[rectangle, draw, thin,fill=green!20, scale=0.8] %protein de signalisation
+\tikzstyle{cplx}=[square, draw, thin, fill=white!20, scale=0.7] %définition d'un complex
+\tikzstyle{transl}=[diamond, draw, thin, fill=white!20, scale=0.3]
+\tikzstyle{mod}=[triangle, draw, thin, fill=white!20, scale=0.3]
+\tikzstyle{qgre}=[rectangle, draw, thin,fill=green!20, size=15pts]
+\tikzstyle{tgrn}=[triangle, draw, thin, fill=green!20, scale=0.8]
+
+%Ajout des arc qui ne sont pas définis dans le grn
+\tikzstyle{st}=[->, draw, thin, dashed] %définition d'un state transition
+
+
+\input{macros/macros}
+\input{macros/macros-ph}
+\input{macros/macros-grn}
+
+% Commandes À FAIRE
+\usepackage{color} % Couleurs du texte
+\definecolor{darkgreen}{rgb}{0,0.5,0}
+%\newcommand{\afaire}[1]{\textcolor{red}{[À FAIRE~: #1]}}
+%\newcommand{\resume}[1]{\textcolor{blue}{#1}}
+\newcommand{\todo}[1]{\textcolor{darkgreen}{[#1]}}
+\newcolumntype{M}[1]{>{\raggedright}m{#1}}
+
+
+% Id est
+\newcommand{\ie}{\textit{i.e.} }
+
+
+
+\title{Rapport pour le comité de suivi de thèse 2013/2014}
+
+\author{Louis Fippo Fitime}
+
+%LUNAM Universit\'e, \'Ecole Centrale de Nantes, IRCCyN UMR CNRS 6597\\
+%(Institut de Recherche en Communications et Cybern\'etique de Nantes)\\
+%1 rue de la No\"e -- B.P. 92101 -- 44321 Nantes Cedex 3, France.\\
+%\email{Louis.Fippo-Fitime@irccyn.ec-nantes.fr}
+
+\begin{document}
+
+%\maketitle
+
+\input{parts/ex.tex}
+
+\input{titre}
+
+\setcounter{page}{0}
+\tableofcontents
+
+
+
+\input{parts/resume}
+\input{parts/contexte}
+\input{parts/contributions}
+\input{parts/perspectives}
+\input{parts/autres}
+
+\bibliographystyle{alpha}
+\bibliography{biblio}
+
+
+\end{document}
